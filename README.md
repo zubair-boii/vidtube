@@ -1,4 +1,4 @@
-# vidtube
+# VidTube
 
 App to download videos from youtube for free.
 
