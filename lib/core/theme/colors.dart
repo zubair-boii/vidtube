@@ -8,4 +8,5 @@ class AppColors {
   static const lightText = Color(0xFFF2F2F2); // Main text
   static const mutedText = Color(0xFF606060); // Secondary text/icons
   static const border = Color(0xFF606060); // Reusable border color
+  static const transparent = Color(0x00000000); // Transparent
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vidtube/core/utils/constants.dart';
+import 'package:vidtube/features/home/view/widgets/custom_textfield.dart';
 
-import '../../../core/theme/colors.dart';
+import '../../../../core/theme/colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -21,6 +22,9 @@ class HomeScreen extends StatelessWidget {
         ),
         centerTitle: true,
         elevation: 0,
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.settings_rounded)),
+        ],
       ),
       body: Column(
         children: [
@@ -31,10 +35,11 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(
               children: [
-                TextFormField(
-                  decoration: InputDecoration(
-                    hintText: "Enter URL",
-                    prefixIcon: Icon(Icons.search_rounded),
+                CustomTextfield(
+                  hintText: "Enter URL",
+                  suffixIcon: GestureDetector(
+                    onTap: () {},
+                    child: const Icon(Icons.search_rounded),
                   ),
                 ),
               ],
