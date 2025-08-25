@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'features/downloads/view/download_screen.dart';
-import 'features/home/view/home_screen.dart';
-import 'features/library/view/library_screen.dart';
+import 'features/downloads/view/pages/download_screen.dart';
+import 'features/home/view/pages/home_screen.dart';
+import 'features/library/view/pages/library_screen.dart';
 
 class CustomTabBar extends StatefulWidget {
   const CustomTabBar({super.key});
@@ -15,7 +15,7 @@ class _CustomTabBarState extends State<CustomTabBar> {
   int _currentTabIndex = 0;
 
   // screens for tab bar
-  final _screens = [HomeScreen(), DownloadScreen(), LibraryScreen()];
+  final _screens = [HomeScreen(), LibraryScreen(), DownloadsScreen()];
 
   @override
   Widget build(BuildContext context) {
